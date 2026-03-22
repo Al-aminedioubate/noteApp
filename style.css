@@ -1,10 +1,12 @@
 body{
     margin: 0;
-    height: 80vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
-.container-notes{
-    
+.container-title{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
 }
