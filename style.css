@@ -10,3 +10,8 @@ body{
     flex-direction: column;
     align-self: center;
 }
+
+.container-notes{
+    margin-left: 100px;
+    margin-top: 50px;
+}
