@@ -21,4 +21,5 @@ button{
     height: 200px;
     font-size: 100px;
     border-radius: 20px;
+    border-style: none;
 }
