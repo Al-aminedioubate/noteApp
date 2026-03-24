@@ -10,7 +10,10 @@ body{
     display: flex;
     flex-direction: column;
     align-self: center;
+    color: blue;
 }
+
+
 
 .container-notes{
     margin-left: 100px;
