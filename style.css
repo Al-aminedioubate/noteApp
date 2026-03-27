@@ -24,12 +24,14 @@ h1{
 .container-notes{
     margin-left: 100px;
     margin-top: 50px;
+    display: flex;
+    gap: 20px;
 }
 
 button{
     width: 300px;
     height: 200px;
-    font-size: 150px;
+    font-size: 100px;
     border-radius: 20px;
     border-style: none;
     box-shadow: 0 1px 2px rgba(0, 0, 0.15);
@@ -40,7 +42,6 @@ button{
 button:hover{
     background-color: rgb(198, 239, 198);
     cursor: pointer;
-    transform: scale(1.1);
 }
 
 textarea{
@@ -51,4 +52,5 @@ textarea{
     background-color: rgb(180, 239, 180);
     outline: none;
     border-style: none;
+    resize: none;
 }
