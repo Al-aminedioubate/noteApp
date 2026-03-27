@@ -11,5 +11,4 @@ function noteContent() {
 
 btn.addEventListener("click", () => {
 	noteContent();
-	console.log("success");
 });
