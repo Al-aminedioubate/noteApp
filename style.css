@@ -53,4 +53,9 @@ textarea{
     outline: none;
     border-style: none;
     resize: none;
+    color: blue;
+}
+
+textarea:hover{
+    background-color: rgb(198, 239, 198);
 }
