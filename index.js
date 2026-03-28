@@ -5,8 +5,10 @@ let btn = document.getElementById("noteBtn");
 
 function noteContent() {
 	let newNote = document.createElement("textarea");
+	newNote.placeholder = "Empty Note";
 
-	notes.appendChild(newNote);
+	//notes.appendChild(newNote);
+	notes.prepend(newNote);
 }
 
 btn.addEventListener("click", () => {
