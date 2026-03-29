@@ -9,6 +9,10 @@ function noteContent() {
 	newNote.id = "noteTextarea";
 
 	notes.prepend(newNote);
+
+	newNote.addEventListener("dblclick", () => {
+		notes.removeChild();
+	});
 }
 
 btn.addEventListener("click", () => {
