@@ -6,6 +6,7 @@ let btn = document.getElementById("noteBtn");
 function noteContent() {
 	let newNote = document.createElement("textarea");
 	newNote.placeholder = "Empty Note";
+	newNote.id = "noteTextarea";
 
 	notes.prepend(newNote);
 }
