@@ -7,11 +7,11 @@ function noteContent() {
 	let newNote = document.createElement("textarea");
 	newNote.placeholder = "Empty Note";
 
+	//Sauvegarde dans local storage
+	localStorage.setItem("note", newNote);
+	newNote.textContent = `${newNote.value}`;
+
 	notes.prepend(newNote);
-
-    //Sauvegarde dans local storage
-    
-
 }
 
 btn.addEventListener("click", () => {
