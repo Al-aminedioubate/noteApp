@@ -3,14 +3,11 @@ let notes = document.getElementById("noteContainer");
 
 let btn = document.getElementById("noteBtn");
 
+//creation du textarea element.
+let newNote = document.createElement("textarea");
+newNote.placeholder = "Empty Note";
+
 function noteContent() {
-	let newNote = document.createElement("textarea");
-	newNote.placeholder = "Empty Note";
-
-	//Sauvegarde dans local storage
-	localStorage.setItem("note", newNote);
-	newNote.textContent = `${newNote.value}`;
-
 	notes.prepend(newNote);
 }
 
