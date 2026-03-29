@@ -12,8 +12,6 @@ function noteContent() {
 	notes.prepend(newNote);
 
 	newNote.addEventListener("dblclick", () => {
-		console.log("double click reussi");
-
 		notes.removeChild(newNote);
 	});
 }
