@@ -7,7 +7,6 @@ function noteContent() {
 	let newNote = document.createElement("textarea");
 	newNote.placeholder = "Empty Note";
 
-	//notes.appendChild(newNote);
 	notes.prepend(newNote);
 }
 
