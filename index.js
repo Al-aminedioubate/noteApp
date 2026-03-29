@@ -6,13 +6,12 @@ let btn = document.getElementById("noteBtn");
 function noteContent() {
 	let newNote = document.createElement("textarea");
 	newNote.placeholder = "Empty Note";
-	newNote.id = "noteTextarea";
 
 	notes.prepend(newNote);
 
-	newNote.addEventListener("dblclick", () => {
-		notes.removeChild();
-	});
+    //Sauvegarde dans local storage
+    
+
 }
 
 btn.addEventListener("click", () => {
