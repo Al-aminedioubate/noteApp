@@ -12,12 +12,13 @@ function noteContent() {
 	notes.prepend(newNote);
 
 	//Ajoutons une confirmation de suppression
-	var userConfirmed = confirm("Do you want to delete this note ?");
-	if (userConfirmed) {
-		newNote.addEventListener("dblclick", () => {
-			notes.removeChild(newNote);
-		});
-	}
+
+	newNote.addEventListener("dblclick", () => {
+		var userConfirmed = confirm("Do you want to delete this note ?");
+		if (userConfirmed) {
+		}
+		notes.removeChild(newNote);
+	});
 }
 
 btn.addEventListener("click", () => {
