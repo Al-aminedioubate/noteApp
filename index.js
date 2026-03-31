@@ -11,9 +11,13 @@ function noteContent() {
 	//Ajoutons la note cree sur le container de la note.
 	notes.prepend(newNote);
 
-	newNote.addEventListener("dblclick", () => {
-		notes.removeChild(newNote);
-	});
+	//Ajoutons une confirmation de suppression
+	var userConfirmed = confirm("Do you want to delete this note ?");
+	if (userConfirmed) {
+		newNote.addEventListener("dblclick", () => {
+			notes.removeChild(newNote);
+		});
+	}
 }
 
 btn.addEventListener("click", () => {
