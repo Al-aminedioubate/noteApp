@@ -11,6 +11,9 @@ function noteContent() {
 	//Ajoutons la note cree sur le container de la note.
 	notes.prepend(newNote);
 
+	//sauvergardons la note localement.
+	localStorage.setItem("note", newNote);
+
 	//Ajoutons une confirmation de suppression
 	newNote.addEventListener("dblclick", () => {
 		var userConfirmed = confirm("Do you want to delete this note ?");
