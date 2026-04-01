@@ -11,9 +11,6 @@ function noteContent() {
 	//Ajoutons la note cree sur le container de la note.
 	notes.prepend(newNote);
 
-	//sauvergardons la note localement.
-	let setNote = localStorage.setItem("note", newNote.value);
-
 	//Recuperons la note sauvegarder
 	let savedNotes = localStorage.getItem(setNote);
 
