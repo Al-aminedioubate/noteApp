@@ -12,7 +12,7 @@ function noteContent() {
 	notes.prepend(newNote);
 
 	//sauvergardons la note localement.
-	localStorage.setItem("note", newNote);
+	let savedNote = localStorage.setItem("note", newNote.value);
 
 	//Ajoutons une confirmation de suppression
 	newNote.addEventListener("dblclick", () => {
