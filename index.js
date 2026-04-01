@@ -18,6 +18,11 @@ function noteContent() {
 		newNote.value = savedNotes;
 	}
 
+	//Sauvegarder quand l'utilisateur tape
+	newNote.addEventListener("input", () => {
+		localStorage.setItem("note", newNote.value);
+	});
+
 	//Ajoutons une confirmation de suppression
 	newNote.addEventListener("dblclick", () => {
 		var userConfirmed = confirm("Do you want to delete this note ?");
