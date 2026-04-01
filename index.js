@@ -11,10 +11,12 @@ function noteContent() {
 	//Ajoutons la note cree sur le container de la note.
 	notes.prepend(newNote);
 
-	//Recuperons la note sauvegarder
-	let savedNotes = localStorage.getItem(setNote);
+	//Recuperons la note sauvegardee
+	let savedNotes = localStorage.getItem("note");
 
-	newNote.value = savedNotes;
+	if (savedNotes) {
+		newNote.value = savedNotes;
+	}
 
 	//Ajoutons une confirmation de suppression
 	newNote.addEventListener("dblclick", () => {
