@@ -12,7 +12,7 @@ function noteContent() {
 	notes.prepend(newNote);
 
 	//Recuperons la note sauvegardee
-	let savedNotes = localStorage.getItem("note");
+	let savedNotes = JSON.parse(localStorage.getItem("notes")) || [];
 
 	if (savedNotes) {
 		newNote.value = savedNotes;
