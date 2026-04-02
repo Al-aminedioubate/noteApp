@@ -20,9 +20,21 @@ function noteContent() {
 
 	//Sauvegarder quand l'utilisateur tape
 	newNote.addEventListener("input", () => {
-        let allNotes = document.querySelectorAll("textarea");
-        
-		localStorage.setItem("note", newNote.value);
+		let allNotes = document.querySelectorAll("textarea");
+		let notesArray = [];
+
+		allNotes.forEach(function (note) {
+			notesArray.push(note.value);
+		});
+
+		localStorage.setItem("notes", JSON.stringify(notesArray));
+	});
+
+	savedNotes.forEach(function (note) {
+		newNote.value = note;
+		newNote.placeholder = "Empty Note";
+
+		notes.prepend(newNote);
 	});
 
 	//Ajoutons une confirmation de suppression
