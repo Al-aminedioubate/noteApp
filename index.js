@@ -20,6 +20,8 @@ function noteContent() {
 
 	//Sauvegarder quand l'utilisateur tape
 	newNote.addEventListener("input", () => {
+        let allNotes = document.querySelectorAll("textarea");
+        
 		localStorage.setItem("note", newNote.value);
 	});
 
