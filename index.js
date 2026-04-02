@@ -14,9 +14,9 @@ function noteContent() {
 	//Recuperons la note sauvegardee
 	let savedNotes = localStorage.getItem("note");
 
-	/*if (savedNotes) {
-        }*/
-	newNote.value = savedNotes;
+	if (savedNotes) {
+		newNote.value = savedNotes;
+	}
 
 	//Sauvegarder quand l'utilisateur tape
 	newNote.addEventListener("input", () => {
