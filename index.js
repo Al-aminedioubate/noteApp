@@ -30,6 +30,7 @@ function noteContent() {
 		localStorage.setItem("notes", JSON.stringify(notesArray));
 	});
 
+	//notes sauvegarder
 	savedNotes.forEach(function (note) {
 		let textarea = document.createElement("textarea");
 		textarea.placeholder = "Empty Note";
