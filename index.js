@@ -31,10 +31,11 @@ function noteContent() {
 	});
 
 	savedNotes.forEach(function (note) {
-		newNote.value = note;
-		newNote.placeholder = "Empty Note";
+		let textarea = document.createElement("textarea");
+		textarea.value = note;
+		textarea.placeholder = "Empty Note";
 
-		notes.prepend(newNote);
+		notes.prepend(textarea);
 	});
 
 	//Ajoutons une confirmation de suppression
