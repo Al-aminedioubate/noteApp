@@ -32,8 +32,8 @@ function noteContent() {
 
 	savedNotes.forEach(function (note) {
 		let textarea = document.createElement("textarea");
-		textarea.value = note;
 		textarea.placeholder = "Empty Note";
+		textarea.value = note;
 
 		notes.prepend(textarea);
 	});
