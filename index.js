@@ -42,9 +42,7 @@ function noteContent() {
 	newNote.addEventListener("dblclick", () => {
 		var userConfirmed = confirm("Do you want to delete this note ?");
 		if (userConfirmed) {
-			notes.forEach(function (note) {
-				note.removeChild(newNote);
-			});
+			notesArray.remove();
 		}
 	});
 }
