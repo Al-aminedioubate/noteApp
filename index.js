@@ -18,6 +18,11 @@ function createNote(id, content) {
 	return textarea;
 }
 
+//la fonction permettant de sauvegardee la note dans local storage
+function saveNote(notes) {
+	localStorage.setItem("note", JSON.stringify(notes));
+}
+
 //fonction permettant de recuperer la note sauvegardee dans local storage.
 function getNotes() {
 	return JSON.parse(localStorage.getItem("note") || "[]");
