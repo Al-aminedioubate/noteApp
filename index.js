@@ -2,6 +2,12 @@
 let notes = document.getElementById("noteContainer");
 let btn = document.getElementById("noteBtn");
 
+//la fonction permettant d'ajouter la note sur la page.
+getNotes().forEech((note) => {
+	const note = createNote(note.id, note.content);
+	notes.insertBefore(note, btn);
+});
+
 //la fonction permettant de creer la note
 function createNote(id, content) {
 	const textarea = document.createElement("textarea");
