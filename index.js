@@ -1,11 +1,11 @@
 //Declaration et initialisatio de nos variables
-let notes = document.getElementById("noteContainer");
+let notesApp = document.getElementById("noteContainer");
 let btn = document.getElementById("noteBtn");
 
 //la fonction permettant d'ajouter la note sur la page.
 getNotes().forEech((note) => {
 	const note = createNote(note.id, note.content);
-	notes.insertBefore(note, btn);
+	notesApp.insertBefore(note, btn);
 });
 
 //la fonction permettant de creer la note
@@ -18,6 +18,20 @@ function createNote(id, content) {
 	return textarea;
 }
 
+function addNote() {
+	const notes = getNotes();
+	const noteObj = {
+		id: Math.floor(Math.random() * 100000),
+		content: "",
+	};
+
+	const noteElement = createNote(noteObj.id, noteObj.content);
+	notesApp.insertBefore(noteElement, btn);
+
+	notes.push(noteObj);
+
+	saveNote(notes);
+}
 //la fonction permettant de sauvegardee la note dans local storage
 function saveNote(notes) {
 	localStorage.setItem("note", JSON.stringify(notes));
