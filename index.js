@@ -43,4 +43,6 @@ function getNotes() {
 	return JSON.parse(localStorage.getItem("note") || "[]");
 }
 
-btnEl.addEventListener("click", addNote);
+btnEl.addEventListener("click", function () {
+	console.log("King");
+});
