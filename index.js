@@ -32,6 +32,7 @@ function addNote() {
 
 	saveNote(notes);
 }
+
 //la fonction permettant de sauvegardee la note dans local storage
 function saveNote(notes) {
 	localStorage.setItem("note", JSON.stringify(notes));
