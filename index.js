@@ -26,7 +26,7 @@ function addNote() {
 	};
 
 	const noteElement = createNote(noteObj.id, noteObj.content);
-	notesApp.insertBefore(noteElement, btn);
+	notesApp.insertBefore(noteElement, btnEl);
 
 	notes.push(noteObj);
 
