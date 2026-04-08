@@ -3,7 +3,7 @@ let notesApp = document.getElementById("noteContainer");
 let btnEl = document.getElementById("noteBtn");
 
 //la fonction permettant d'ajouter la note sur la page.
-getNotes().forEech((note) => {
+getNotes().forEach((note) => {
 	const noteEl = createNote(note.id, note.content);
 	notesApp.insertBefore(noteEl, btnEl);
 });
@@ -43,6 +43,4 @@ function getNotes() {
 	return JSON.parse(localStorage.getItem("note") || "[]");
 }
 
-btn.addEventListener("click", () => {
-	noteContent();
-});
+btnEl.addEventListener("click", addNote);
