@@ -1,11 +1,11 @@
 //Declaration et initialisatio de nos variables
 let notesApp = document.getElementById("noteContainer");
-let btn = document.getElementById("noteBtn");
+let btnEl = document.getElementById("noteBtn");
 
 //la fonction permettant d'ajouter la note sur la page.
 getNotes().forEech((note) => {
-	const note = createNote(note.id, note.content);
-	notesApp.insertBefore(note, btn);
+	const noteEl = createNote(note.id, note.content);
+	notesApp.insertBefore(noteEl, btnEl);
 });
 
 //la fonction permettant de creer la note
