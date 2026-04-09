@@ -18,6 +18,7 @@ function createNote(id, content) {
 	return textarea;
 }
 
+//Fonction permettant de supprimer une note
 function deleteNote(id, textContent) {
 	const notes = getNotes().filter((note) => note.id != id);
 	saveNote(notes);
