@@ -18,8 +18,10 @@ function createNote(id, content) {
 	return textarea;
 }
 
-function deleteNote(id, textContent){
-	
+function deleteNote(id, textContent) {
+	const notes = getNotes().filter((note) => note.id != id);
+	saveNote(notes);
+	notesApp.removeChild(textContent);
 }
 
 function addNote() {
