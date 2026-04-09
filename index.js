@@ -28,6 +28,8 @@ function deleteNote(id, textContent) {
 function updateNote(id, content) {
 	const notes = getNotes();
 	const target = notes.filter((note) => note.id == id)[0];
+	target.content = content;
+	saveNote(notes);
 }
 
 //Fonction permettant d'ajouter une note
