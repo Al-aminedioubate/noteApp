@@ -18,6 +18,10 @@ function createNote(id, content) {
 	return textarea;
 }
 
+function deleteNote(id, textContent){
+	
+}
+
 function addNote() {
 	const notes = getNotes();
 	const noteObj = {
