@@ -25,8 +25,9 @@ function deleteNote(id, textContent) {
 	notesApp.removeChild(textContent);
 }
 
-function updateNote(id, content){
-
+function updateNote(id, content) {
+	const notes = getNotes();
+	const target = notes.filter((note) => note.id == id)[0];
 }
 
 //Fonction permettant d'ajouter une note
