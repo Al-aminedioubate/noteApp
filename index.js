@@ -25,6 +25,7 @@ function deleteNote(id, textContent) {
 	notesApp.removeChild(textContent);
 }
 
+//Fonction permettant d'ajouter une note
 function addNote() {
 	const notes = getNotes();
 	const noteObj = {
