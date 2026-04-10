@@ -14,6 +14,10 @@ function createNote(id, content) {
 	textarea.classList.add("container-notes");
 	textarea.placeholder = "Empty Note";
 	textarea.value = content;
+	
+	textarea.addEventListener("dblclick", ()=>{
+		
+	})
 
 	return textarea;
 }
