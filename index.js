@@ -22,6 +22,10 @@ function createNote(id, content) {
 		}
 	});
 
+	textarea.addEventListener("input", ()=>{
+		
+	})
+
 	return textarea;
 }
 
