@@ -14,10 +14,10 @@ function createNote(id, content) {
 	textarea.classList.add("container-notes");
 	textarea.placeholder = "Empty Note";
 	textarea.value = content;
-	
-	textarea.addEventListener("dblclick", ()=>{
-		
-	})
+
+	textarea.addEventListener("dblclick", () => {
+		const warning = confirm("Do you want to delete this note ?");
+	});
 
 	return textarea;
 }
