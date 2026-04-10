@@ -17,6 +17,9 @@ function createNote(id, content) {
 
 	textarea.addEventListener("dblclick", () => {
 		const warning = confirm("Do you want to delete this note ?");
+		if (warning) {
+			updateNote(id, textarea.value);
+		}
 	});
 
 	return textarea;
