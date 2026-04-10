@@ -22,9 +22,9 @@ function createNote(id, content) {
 		}
 	});
 
-	textarea.addEventListener("input", ()=>{
-		
-	})
+	textarea.addEventListener("input", () => {
+		updateNote(id, textarea.value);
+	});
 
 	return textarea;
 }
