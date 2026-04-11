@@ -15,6 +15,7 @@ function createNote(id, content) {
 	textarea.placeholder = "Empty Note";
 	textarea.value = content;
 
+	//evenement du suppression avec le doule clck
 	textarea.addEventListener("dblclick", () => {
 		const warning = confirm("Do you want to delete this note ?");
 		if (warning) {
