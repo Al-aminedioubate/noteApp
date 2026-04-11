@@ -37,6 +37,7 @@ function deleteNote(id, textContent) {
 	notesApp.removeChild(textContent);
 }
 
+//La mise du notes apres la suppression
 function updateNote(id, content) {
 	const notes = getNotes();
 	const target = notes.filter((note) => note.id == id)[0];
