@@ -71,6 +71,7 @@ function getNotes() {
 	return JSON.parse(localStorage.getItem("note") || "[]");
 }
 
+//evenement pricinpale
 btnEl.addEventListener("click", function () {
 	console.log("King");
 });
