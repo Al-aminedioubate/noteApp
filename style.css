@@ -23,9 +23,7 @@ h1{
 }
 
 .container-notes{
-    margin-left: 100px;
-    margin-top: 50px;
-    display: flex;
+    margin: 50px;
 }
 
 button{
