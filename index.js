@@ -72,6 +72,4 @@ function getNotes() {
 }
 
 //evenement pricinpale
-btnEl.addEventListener("click", function () {
-	console.log("King");
-});
+btnEl.addEventListener("click");
