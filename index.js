@@ -72,4 +72,4 @@ function getNotes() {
 }
 
 //evenement pricinpale
-btnEl.addEventListener("click");
+btnEl.addEventListener("click", addNote);
