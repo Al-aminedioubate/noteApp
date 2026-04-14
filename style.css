@@ -24,6 +24,7 @@ h1{
 
 .container-notes{
     display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
     margin: 30px;
 }
 
