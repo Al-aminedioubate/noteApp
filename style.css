@@ -23,6 +23,7 @@ h1{
 }
 
 .container-notes{
+    display: grid;
     margin: 30px;
 }
 
