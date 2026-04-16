@@ -23,7 +23,7 @@ h1{
     text-align: center;
 }
 
-/*Title style in grid*/
+/*textarea style in grid*/
 .container-notes{
     display: grid;
     grid-template-columns: repeat(auto-fill, 300px);
@@ -48,6 +48,7 @@ button:hover{
     cursor: pointer;
 }
 
+/*textarea style*/
 textarea{
     width: 250px;
     height: 125px;
