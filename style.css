@@ -23,6 +23,7 @@ h1{
     text-align: center;
 }
 
+/*Title style in grid*/
 .container-notes{
     display: grid;
     grid-template-columns: repeat(auto-fill, 300px);
